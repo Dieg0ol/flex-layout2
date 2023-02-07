@@ -1,0 +1,101 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.header {
+  height: 72px;
+  background: darkmagenta;
+  color: white;
+}
+
+.footer {
+  height: 72px;
+  background: #eee;
+  color: darkmagenta;
+}
+
+.sidebar {
+  width: 300px;
+  background: royalblue;
+}
+
+.card {
+  border: 1px solid #eee;
+  box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+  border-radius: 4px;
+}
+
+/* Below this line begin the changes in the code bruh */
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0 16px; /* esquerda e direita com 16px e cima e baixo com 0 ou 2 */
+  font-size: 32px; /* tamanho da font*/
+  font-weight: 900; /* peso da font */
+}
+
+.test1 {
+  flex: 1;
+  display: flex;
+
+}
+
+.sidebar {
+ flex-shrink: 0; /* não deixa o item ser esmagado  */
+ padding: 16px; /* preenchimento de 16px */ 
+}
+
+
+ul {
+  list-style-type: none; /* tira o bullet da lista */
+  margin: 0; /*itens vão ficar mais acima na pagina*/
+  padding: 0; /* itens vão colar a esquerda da pagina */
+}
+
+li {
+  margin-bottom: 16px; /* entre cada uma delas fica um espaço de 16px abaixo delas */
+}
+
+a {
+  color: white;
+  text-decoration: none; /* tira o sublinhado dos links */
+  font-size: 24px;
+
+}
+
+.container {
+  padding: 32px; /*preenchimento ao redor*/
+  display: flex;
+  flex-wrap: wrap; /* com esse cara é possivel ocorrer quebras de linhas */
+}
+
+
+/* não saquei bem  como funciona o funcionamento desse aqui preenche e depois da margem dai adiociona os 300px de width */
+.card {
+  padding: 16px;
+  margin: 16px;
+  width: 300px;
+}
+
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
